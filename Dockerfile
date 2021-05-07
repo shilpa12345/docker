@@ -1,3 +1,3 @@
-FROM node:07-onbuild
+FROM nginx
 
 EXPOSE 8000
