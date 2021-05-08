@@ -1,3 +1,2 @@
 FROM nginx
-
-EXPOSE 8000
+COPY index.html /usr/share/nginx/html
