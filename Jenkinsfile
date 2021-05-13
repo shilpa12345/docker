@@ -24,10 +24,10 @@ node {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
 		*/
-        docker.withRegistry('https://dekaks.azurecr.io', 'ssm-acr') {
+        docker.withRegistry('https://dekaks.azurecr.io', 'ssm-docker') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
             } 
-                echo "Trying to Push Docker Build to ACR"
+                echo "Trying to Push Docker Build to registry"
     }
 }
