@@ -13,12 +13,7 @@ node {
         app = docker.build("ssm123/myapp")
     }
 
-    stage('Test image') {
-        
-        app.inside {
-            echo "Tests passed"
-        }
-    }
+    
 
     stage('Push image') {
         /* 
