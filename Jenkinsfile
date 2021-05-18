@@ -10,7 +10,8 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("ssm123/myapp5456")
+        /*app = docker.build("ssm123/myapp5456")*/
+	    sh 'sudo docker build .'
     }
 
     
